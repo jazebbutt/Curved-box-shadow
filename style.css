@@ -1,0 +1,50 @@
+div { box-sizing: border-box; }
+
+.wrap {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.shadow {
+  position: relative;
+  margin: 3em auto;
+  padding-top: 2em;
+  width: 400px;
+  height: 100px;
+  border: 1px solid #777777;
+  border-radius: 5px;
+  background: #e5e5e5;
+  text-align: center;
+  box-shadow: 0 0 25px 0 rgba(50,50,50,.3) inset;
+}
+
+.shadow:after {
+  content: "";
+  position: relative;
+}
+
+.curved:after, .curved-2:after {
+  position: relative;
+  z-index: -2;
+}
+
+.curved:after {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  box-shadow: 0 0px 10px 7px rgba(100,100,100,0.5);
+  border-radius: 450px / 15px
+}
+
+.curved-2:after {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  box-shadow: 0 0px 10px 7px rgba(100,100,100,0.5);
+  border-radius: 450px / 15px;
+}
+
